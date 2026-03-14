@@ -11,8 +11,8 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Cognitive alchemy LEX — transmutation of ideas through alchemical stages'
   spec.description   = 'Models the Magnum Opus of idea transmutation: substances pass through ' \
-                        'nigredo/albedo/citrinitas/rubedo stages, crucible reactions combine elements ' \
-                        'under heat and pressure, and philosopher stone catalysis accelerates breakthroughs.'
+                       'nigredo/albedo/citrinitas/rubedo stages, crucible reactions combine elements ' \
+                       'under heat and pressure, and philosopher stone catalysis accelerates breakthroughs.'
   spec.homepage      = 'https://github.com/LegionIO/lex-cognitive-alchemy'
 
   spec.required_ruby_version = '>= 3.4'

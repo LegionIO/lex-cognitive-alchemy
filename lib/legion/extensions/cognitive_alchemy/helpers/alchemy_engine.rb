@@ -50,13 +50,13 @@ module Legion
           end
 
           def substances_by_stage
-            counts = Constants::STAGES.each_with_object({}) { |s, h| h[s] = 0 }
+            counts = Constants::STAGES.to_h { |s| [s, 0] }
             @substances.each_value { |s| counts[s.stage] += 1 }
             counts
           end
 
           def substances_by_type
-            counts = Constants::ELEMENT_TYPES.each_with_object({}) { |t, h| h[t] = 0 }
+            counts = Constants::ELEMENT_TYPES.to_h { |t| [t, 0] }
             @substances.each_value { |s| counts[s.element_type] += 1 }
             counts
           end
